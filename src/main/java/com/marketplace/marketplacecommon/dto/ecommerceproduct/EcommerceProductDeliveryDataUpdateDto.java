@@ -1,8 +1,8 @@
-package com.marketplace.marketplacecommon.ecommerceproduct.dto;
+package com.marketplace.marketplacecommon.dto.ecommerceproduct;
 
-import com.marketplace.marketplacecommon.product.dto.ProductDeliveryDataUpdateDTO;
+import com.marketplace.marketplacecommon.dto.product.ProductDeliveryDataUpdateDto;
 
-public class EcommerceProductDeliveryDataUpdateDTO {
+public class EcommerceProductDeliveryDataUpdateDto {
 
     private String productId;
 
@@ -22,10 +22,10 @@ public class EcommerceProductDeliveryDataUpdateDTO {
 
     private Long sentTimestampEcommerce;
 
-    public EcommerceProductDeliveryDataUpdateDTO() {
+    public EcommerceProductDeliveryDataUpdateDto() {
     }
 
-    public EcommerceProductDeliveryDataUpdateDTO(ProductDeliveryDataUpdateDTO productDeliveryDataUpdateDTO, String sellerCode) {
+    public EcommerceProductDeliveryDataUpdateDto(ProductDeliveryDataUpdateDto productDeliveryDataUpdateDTO, String sellerCode) {
         this.weight = productDeliveryDataUpdateDTO.getWeight();
         this.length = productDeliveryDataUpdateDTO.getLength();
         this.weight = productDeliveryDataUpdateDTO.getWeight();

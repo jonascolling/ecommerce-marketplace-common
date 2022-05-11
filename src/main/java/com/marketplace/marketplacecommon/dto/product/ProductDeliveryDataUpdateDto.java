@@ -1,6 +1,6 @@
-package com.marketplace.marketplacecommon.product.dto;
+package com.marketplace.marketplacecommon.dto.product;
 
-public class ProductDeliveryDataUpdateDTO {
+public class ProductDeliveryDataUpdateDto {
 
     private String productId;
 

@@ -1,8 +1,8 @@
-package com.marketplace.marketplacecommon.product.dto;
+package com.marketplace.marketplacecommon.dto.product;
 
 import java.util.List;
 
-public class ProductDTO {
+public class ProductDto {
 
     private String productId;
 
@@ -24,9 +24,9 @@ public class ProductDTO {
 
     private String gender;
 
-    private List<ProductAttributeValueDTO> attributeValue;
+    private List<ProductAttributeValueDto> attributeValue;
 
-    private List<ProductItemDTO> productItem;
+    private List<ProductItemDto> productItem;
 
     public String getProductId() {
         return productId;
@@ -108,19 +108,19 @@ public class ProductDTO {
         this.gender = gender;
     }
 
-    public List<ProductAttributeValueDTO> getAttributeValue() {
+    public List<ProductAttributeValueDto> getAttributeValue() {
         return attributeValue;
     }
 
-    public void setAttributeValue(List<ProductAttributeValueDTO> attributeValue) {
+    public void setAttributeValue(List<ProductAttributeValueDto> attributeValue) {
         this.attributeValue = attributeValue;
     }
 
-    public List<ProductItemDTO> getProductItem() {
+    public List<ProductItemDto> getProductItem() {
         return productItem;
     }
 
-    public void setProductItem(List<ProductItemDTO> productItem) {
+    public void setProductItem(List<ProductItemDto> productItem) {
         this.productItem = productItem;
     }
 }

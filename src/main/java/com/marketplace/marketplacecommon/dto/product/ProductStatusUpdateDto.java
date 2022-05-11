@@ -1,6 +1,6 @@
-package com.marketplace.marketplacecommon.product.dto;
+package com.marketplace.marketplacecommon.dto.product;
 
-public class ProductPriceUpdateDTO {
+public class ProductStatusUpdateDto {
 
     private String productId;
 
@@ -8,9 +8,7 @@ public class ProductPriceUpdateDTO {
 
     private String skuSellerId;
 
-    private Double price;
-
-    private Double fullPrice;
+    private boolean obsolete;
 
     private Long sentTimestampEcommerce;
 
@@ -38,20 +36,12 @@ public class ProductPriceUpdateDTO {
         this.skuSellerId = skuSellerId;
     }
 
-    public Double getPrice() {
-        return price;
+    public boolean isObsolete() {
+        return obsolete;
     }
 
-    public void setPrice(Double price) {
-        this.price = price;
-    }
-
-    public Double getFullPrice() {
-        return fullPrice;
-    }
-
-    public void setFullPrice(Double fullPrice) {
-        this.fullPrice = fullPrice;
+    public void setObsolete(boolean obsolete) {
+        this.obsolete = obsolete;
     }
 
     public Long getSentTimestampEcommerce() {

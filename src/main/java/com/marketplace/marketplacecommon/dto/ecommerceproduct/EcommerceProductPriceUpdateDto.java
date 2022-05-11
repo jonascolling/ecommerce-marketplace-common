@@ -1,8 +1,8 @@
-package com.marketplace.marketplacecommon.ecommerceproduct.dto;
+package com.marketplace.marketplacecommon.dto.ecommerceproduct;
 
-import com.marketplace.marketplacecommon.product.dto.ProductPriceUpdateDTO;
+import com.marketplace.marketplacecommon.dto.product.ProductPriceUpdateDto;
 
-public class EcommerceProductPriceUpdateDTO {
+public class EcommerceProductPriceUpdateDto {
 
     private String productId;
 
@@ -16,10 +16,10 @@ public class EcommerceProductPriceUpdateDTO {
 
     private Long sentTimestampEcommerce;
 
-    public EcommerceProductPriceUpdateDTO() {
+    public EcommerceProductPriceUpdateDto() {
     }
 
-    public EcommerceProductPriceUpdateDTO(ProductPriceUpdateDTO productPriceUpdateDTO, String sellerCode) {
+    public EcommerceProductPriceUpdateDto(ProductPriceUpdateDto productPriceUpdateDTO, String sellerCode) {
         this.fullPrice = productPriceUpdateDTO.getFullPrice();
         this.price = productPriceUpdateDTO.getPrice();
         this.productId = productPriceUpdateDTO.getProductId();

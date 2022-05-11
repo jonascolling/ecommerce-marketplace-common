@@ -1,8 +1,8 @@
-package com.marketplace.marketplacecommon.product.dto;
+package com.marketplace.marketplacecommon.dto.ecommerceproduct;
 
 import java.util.List;
 
-public class ProductItemDTO {
+public class EcommerceProductItemDto {
 
     private String productItemId;
 
@@ -11,8 +11,6 @@ public class ProductItemDTO {
     private String name;
 
     private String size;
-
-    private String color;
 
     private boolean obsolete;
 
@@ -34,9 +32,7 @@ public class ProductItemDTO {
 
     private Integer deliveryTimeDays;
 
-    private ProductItemSellerDTO productItemSeller;
-
-    private List<ProductItemPictureDTO> productItemPicture;
+    private String productItemSellerId;
 
     public String getProductItemId() {
         return productItemId;
@@ -68,14 +64,6 @@ public class ProductItemDTO {
 
     public void setSize(String size) {
         this.size = size;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     public boolean isObsolete() {
@@ -158,19 +146,11 @@ public class ProductItemDTO {
         this.deliveryTimeDays = deliveryTimeDays;
     }
 
-    public ProductItemSellerDTO getProductItemSeller() {
-        return productItemSeller;
+    public String getProductItemSellerId() {
+        return productItemSellerId;
     }
 
-    public void setProductItemSeller(ProductItemSellerDTO productItemSeller) {
-        this.productItemSeller = productItemSeller;
-    }
-
-    public List<ProductItemPictureDTO> getProductItemPicture() {
-        return productItemPicture;
-    }
-
-    public void setProductItemPicture(List<ProductItemPictureDTO> productItemPicture) {
-        this.productItemPicture = productItemPicture;
+    public void setProductItemSellerId(String productItemSellerId) {
+        this.productItemSellerId = productItemSellerId;
     }
 }

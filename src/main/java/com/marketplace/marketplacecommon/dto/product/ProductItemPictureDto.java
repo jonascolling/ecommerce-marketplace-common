@@ -1,6 +1,6 @@
-package com.marketplace.marketplacecommon.product.dto;
+package com.marketplace.marketplacecommon.dto.product;
 
-public class ProductItemPictureDTO {
+public class ProductItemPictureDto {
 
     private String picture;
 

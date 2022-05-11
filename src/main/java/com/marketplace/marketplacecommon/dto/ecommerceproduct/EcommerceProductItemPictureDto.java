@@ -1,6 +1,6 @@
-package com.marketplace.marketplacecommon.ecommerceproduct.dto;
+package com.marketplace.marketplacecommon.dto.ecommerceproduct;
 
-public class EcommerceProductItemPictureDTO {
+public class EcommerceProductItemPictureDto {
 
     private String url;
 

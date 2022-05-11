@@ -1,8 +1,8 @@
-package com.marketplace.marketplacecommon.ecommerceproduct.dto;
+package com.marketplace.marketplacecommon.dto.ecommerceproduct;
 
 import java.util.List;
 
-public class EcommerceProductDTO {
+public class EcommerceProductDto {
 
     private String productId;
 
@@ -18,11 +18,11 @@ public class EcommerceProductDTO {
 
     private String sellerCode;
 
-    private List<EcommerceProductAttributeValueDTO> attributeValue;
+    private List<EcommerceProductAttributeValueDto> attributeValue;
 
-    private List<EcommerceProductItemDTO> productItem;
+    private List<EcommerceProductItemDto> productItem;
 
-    private List<EcommerceProductItemPictureDTO> productItemPicture;
+    private List<EcommerceProductItemPictureDto> productItemPicture;
 
     private List<String> categories;
 
@@ -80,7 +80,7 @@ public class EcommerceProductDTO {
         this.description = description;
     }
 
-    public List<EcommerceProductAttributeValueDTO> getAttributeValue() {
+    public List<EcommerceProductAttributeValueDto> getAttributeValue() {
         return attributeValue;
     }
 
@@ -92,23 +92,23 @@ public class EcommerceProductDTO {
         this.sellerCode = sellerCode;
     }
 
-    public void setAttributeValue(List<EcommerceProductAttributeValueDTO> attributeValue) {
+    public void setAttributeValue(List<EcommerceProductAttributeValueDto> attributeValue) {
         this.attributeValue = attributeValue;
     }
 
-    public List<EcommerceProductItemDTO> getProductItem() {
+    public List<EcommerceProductItemDto> getProductItem() {
         return productItem;
     }
 
-    public void setProductItem(List<EcommerceProductItemDTO> productItem) {
+    public void setProductItem(List<EcommerceProductItemDto> productItem) {
         this.productItem = productItem;
     }
 
-    public List<EcommerceProductItemPictureDTO> getProductItemPicture() {
+    public List<EcommerceProductItemPictureDto> getProductItemPicture() {
         return productItemPicture;
     }
 
-    public void setProductItemPicture(List<EcommerceProductItemPictureDTO> productItemPicture) {
+    public void setProductItemPicture(List<EcommerceProductItemPictureDto> productItemPicture) {
         this.productItemPicture = productItemPicture;
     }
 

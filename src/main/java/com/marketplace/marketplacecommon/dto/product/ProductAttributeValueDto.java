@@ -1,6 +1,6 @@
-package com.marketplace.marketplacecommon.product.dto;
+package com.marketplace.marketplacecommon.dto.product;
 
-public class ProductAttributeValueDTO {
+public class ProductAttributeValueDto {
 
     private String attributeEcommerceCode;
 

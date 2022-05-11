@@ -1,6 +1,6 @@
-package com.marketplace.marketplacecommon.product.dto;
+package com.marketplace.marketplacecommon.dto.product;
 
-public class ProductStatusUpdateDTO {
+public class ProductStockUpdateDto {
 
     private String productId;
 
@@ -8,7 +8,7 @@ public class ProductStatusUpdateDTO {
 
     private String skuSellerId;
 
-    private boolean obsolete;
+    private Integer stock;
 
     private Long sentTimestampEcommerce;
 
@@ -36,12 +36,12 @@ public class ProductStatusUpdateDTO {
         this.skuSellerId = skuSellerId;
     }
 
-    public boolean isObsolete() {
-        return obsolete;
+    public Integer getStock() {
+        return stock;
     }
 
-    public void setObsolete(boolean obsolete) {
-        this.obsolete = obsolete;
+    public void setStock(Integer stock) {
+        this.stock = stock;
     }
 
     public Long getSentTimestampEcommerce() {

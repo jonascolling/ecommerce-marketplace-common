@@ -1,8 +1,8 @@
-package com.marketplace.marketplacecommon.ecommerceproduct.dto;
+package com.marketplace.marketplacecommon.dto.ecommerceproduct;
 
-import com.marketplace.marketplacecommon.product.dto.ProductStatusUpdateDTO;
+import com.marketplace.marketplacecommon.dto.product.ProductStatusUpdateDto;
 
-public class EcommerceProductStatusUpdateDTO {
+public class EcommerceProductStatusUpdateDto {
 
     private String productId;
 
@@ -14,10 +14,10 @@ public class EcommerceProductStatusUpdateDTO {
 
     private Long sentTimestampEcommerce;
 
-    public EcommerceProductStatusUpdateDTO() {
+    public EcommerceProductStatusUpdateDto() {
     }
 
-    public EcommerceProductStatusUpdateDTO(ProductStatusUpdateDTO productStatusUpdateDTO, String sellerCode) {
+    public EcommerceProductStatusUpdateDto(ProductStatusUpdateDto productStatusUpdateDTO, String sellerCode) {
         this.obsolete = productStatusUpdateDTO.isObsolete();
         this.productId = productStatusUpdateDTO.getProductId();
         this.sentTimestampEcommerce = productStatusUpdateDTO.getSentTimestampEcommerce();

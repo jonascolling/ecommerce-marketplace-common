@@ -1,6 +1,6 @@
-package com.marketplace.marketplacecommon.product.dto;
+package com.marketplace.marketplacecommon.dto.product;
 
-public class ProductStockUpdateDTO {
+public class ProductPriceUpdateDto {
 
     private String productId;
 
@@ -8,7 +8,9 @@ public class ProductStockUpdateDTO {
 
     private String skuSellerId;
 
-    private Integer stock;
+    private Double price;
+
+    private Double fullPrice;
 
     private Long sentTimestampEcommerce;
 
@@ -36,12 +38,20 @@ public class ProductStockUpdateDTO {
         this.skuSellerId = skuSellerId;
     }
 
-    public Integer getStock() {
-        return stock;
+    public Double getPrice() {
+        return price;
     }
 
-    public void setStock(Integer stock) {
-        this.stock = stock;
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public Double getFullPrice() {
+        return fullPrice;
+    }
+
+    public void setFullPrice(Double fullPrice) {
+        this.fullPrice = fullPrice;
     }
 
     public Long getSentTimestampEcommerce() {
