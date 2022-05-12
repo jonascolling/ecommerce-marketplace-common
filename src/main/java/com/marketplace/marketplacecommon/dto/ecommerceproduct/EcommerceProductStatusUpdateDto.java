@@ -14,18 +14,6 @@ public class EcommerceProductStatusUpdateDto {
 
     private Long sentTimestampEcommerce;
 
-    public EcommerceProductStatusUpdateDto() {
-    }
-
-    public EcommerceProductStatusUpdateDto(ProductStatusUpdateDto productStatusUpdateDTO, String sellerCode) {
-        this.obsolete = productStatusUpdateDTO.isObsolete();
-        this.productId = productStatusUpdateDTO.getProductId();
-        this.sentTimestampEcommerce = productStatusUpdateDTO.getSentTimestampEcommerce();
-        this.skuSellerId = productStatusUpdateDTO.getSkuSellerId();
-        this.sellerCode = sellerCode;
-        this.productId = productStatusUpdateDTO.getProductId();
-    }
-
     public String getProductId() {
         return productId;
     }

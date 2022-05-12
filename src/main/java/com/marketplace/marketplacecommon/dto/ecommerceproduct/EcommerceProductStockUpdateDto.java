@@ -14,18 +14,6 @@ public class EcommerceProductStockUpdateDto {
 
     private Long sentTimestampEcommerce;
 
-    public EcommerceProductStockUpdateDto() {
-    }
-
-    public EcommerceProductStockUpdateDto(ProductStockUpdateDto productStockUpdateDTO, String sellerCode) {
-        this.stock = productStockUpdateDTO.getStock();
-        this.productId = productStockUpdateDTO.getProductId();
-        this.sentTimestampEcommerce = productStockUpdateDTO.getSentTimestampEcommerce();
-        this.skuSellerId = productStockUpdateDTO.getSkuSellerId();
-        this.sellerCode = sellerCode;
-        this.productId = productStockUpdateDTO.getProductId();
-    }
-
     public String getProductId() {
         return productId;
     }

@@ -22,21 +22,6 @@ public class EcommerceProductDeliveryDataUpdateDto {
 
     private Long sentTimestampEcommerce;
 
-    public EcommerceProductDeliveryDataUpdateDto() {
-    }
-
-    public EcommerceProductDeliveryDataUpdateDto(ProductDeliveryDataUpdateDto productDeliveryDataUpdateDTO, String sellerCode) {
-        this.weight = productDeliveryDataUpdateDTO.getWeight();
-        this.length = productDeliveryDataUpdateDTO.getLength();
-        this.weight = productDeliveryDataUpdateDTO.getWeight();
-        this.width = productDeliveryDataUpdateDTO.getWidth();
-        this.productId = productDeliveryDataUpdateDTO.getProductId();
-        this.sentTimestampEcommerce = productDeliveryDataUpdateDTO.getSentTimestampEcommerce();
-        this.skuSellerId = productDeliveryDataUpdateDTO.getSkuSellerId();
-        this.sellerCode = sellerCode;
-        this.productId = productDeliveryDataUpdateDTO.getProductId();
-    }
-
     public String getProductId() {
         return productId;
     }

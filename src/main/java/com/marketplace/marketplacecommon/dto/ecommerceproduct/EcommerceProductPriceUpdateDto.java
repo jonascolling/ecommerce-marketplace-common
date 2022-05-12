@@ -16,19 +16,6 @@ public class EcommerceProductPriceUpdateDto {
 
     private Long sentTimestampEcommerce;
 
-    public EcommerceProductPriceUpdateDto() {
-    }
-
-    public EcommerceProductPriceUpdateDto(ProductPriceUpdateDto productPriceUpdateDTO, String sellerCode) {
-        this.fullPrice = productPriceUpdateDTO.getFullPrice();
-        this.price = productPriceUpdateDTO.getPrice();
-        this.productId = productPriceUpdateDTO.getProductId();
-        this.sentTimestampEcommerce = productPriceUpdateDTO.getSentTimestampEcommerce();
-        this.skuSellerId = productPriceUpdateDTO.getSkuSellerId();
-        this.sellerCode = sellerCode;
-        this.productId = productPriceUpdateDTO.getProductId();
-    }
-
     public String getProductId() {
         return productId;
     }
