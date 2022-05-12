@@ -16,6 +16,7 @@ public class EcommerceConsignmentDto {
     private Double discountAmount;
     private Double costOfDelivery;
     private EcommerceAddressDto shippingAddress;
+    private Double CommissioningValueToEcommerce;
     private Set<EcommerceConsignmentEntryDto> consignmentEntries;
 
     public EcommerceOrderDto getOrder() {
@@ -112,5 +113,13 @@ public class EcommerceConsignmentDto {
 
     public void setConsignmentEntries(Set<EcommerceConsignmentEntryDto> consignmentEntries) {
         this.consignmentEntries = consignmentEntries;
+    }
+
+    public Double getCommissioningValueToEcommerce() {
+        return CommissioningValueToEcommerce;
+    }
+
+    public void setCommissioningValueToEcommerce(Double commissioningValueToEcommerce) {
+        CommissioningValueToEcommerce = commissioningValueToEcommerce;
     }
 }
